@@ -1,0 +1,106 @@
+body {
+  font-size: 20px;
+  margin: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar h1:hover {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+.links {
+  margin-left: 700px;
+}
+.links a {
+  margin-right: 50px;
+  font-size: 25px;
+}
+
+.links a:hover {
+  color: red;
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  margin-top: 80px;
+  height: 100%;
+}
+.image img {
+  width: 50%;
+  height: 40%;
+  margin-left: 70px;
+
+  border-radius: 50%;
+}
+.image img:hover {
+  transform: scale(1.2);
+}
+
+.introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hello {
+  font-size: 60px;
+}
+.tagline {
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 400px;
+  text-align: center;
+}
+
+.name {
+  color: red;
+}
+
+.socialHandlers {
+  display: flex;
+  justify-content: start;
+}
+.socialHandlers img {
+  margin-right: 30px;
+}
+
+.socialHandlers img:hover {
+  transform: scale(1.2);
+}
+
+.line {
+  border: 1px black solid;
+  width: 90%;
+}
+
+@media all and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .links {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    margin-left: 180px;
+  }
+}
